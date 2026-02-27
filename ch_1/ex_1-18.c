@@ -27,7 +27,10 @@ int main()
 	break;
       }
       
-      if (line[i] == ' ' || line[i] == '\t') continue;
+      if (line[i] == ' ' || line[i] == '\t') {
+    	// line[i] = '\b';
+      	continue;
+      }
     }
     
     line[i + 1] = '\n';
